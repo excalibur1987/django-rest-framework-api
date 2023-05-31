@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "django-rest-framework-api"
+version = "0.1.0"
+description = "Test Project for Django Rest Frameowrk API"
+authors = ["Omar Ali AbdelSalam <excalibur1987@gmail.com>"]
+readme = "README.md"
+packages = [{include = "django_rest_framework_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.2.1"
+djangorestframework = "^3.14.0"
+requests = "^2.31.0"
+django-cors = "^0.1"
+pyyaml = "^6.0"
+django-cors-headers = "^4.0.0"
+
+[tool.poetry.group.dev.dependencies]
+autoflake = "^2.1.1"
+isort = "^5.12.0"
+pre-commit = "^3.3.2"
+black = "^23.3.0"
+flake8 = "^6.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
